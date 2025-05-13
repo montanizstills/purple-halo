@@ -1,8 +1,16 @@
-version: '3'  # While "obsolete" according to the warning, it works fine
 services:
   kali:
     build:
       context: .
-      # dockerfile: kali-app.DockerFile
+    volumes:
+      - sf_vbox:/media/sf_vbox
+      # - $GDRIVE/dev/projects/purple-halo:/media/local
     tty: true
     stdin_open: true
+    restart: no # 
+    command: /bin/bash
+
+volumes:
+  sf_vbox:  # This empty declaration is still required for named volumes
+  # purple-halo: # Not needed as it is mounted from the host
+    
