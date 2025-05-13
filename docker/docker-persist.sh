@@ -5,4 +5,5 @@
 # docker run --name kali-vbox -v sf_vboxsf:/media/vboxsf -v "$HOME/vboxsf-studio":/media/host -it kalilinux/kali-rolling bash -c 'tar -xvzf /media/host/mybackup.tar.gz -C /media/vboxsf; bash'
 
 
-docker run --rm -it -v sf_vbox:/media/sf_vbox -v $GDRIVE/dev/projects/purple-halo/docker/:/media/local kali-vbox
+# use privilege to run nmap
+docker run --privileged --rm -it -v sf_vbox:/media/sf_vbox -v $GDRIVE/dev/projects/purple-halo/:/media/local kali-vbox

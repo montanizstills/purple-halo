@@ -11,12 +11,9 @@ RUN \
     sh sf_vbox/update-kali-docker-image-gpg-key.sh && \    
     apt-get update && \
     apt-get --fix-broken install && \
-    apt-get full-upgrade -y
-
-RUN \
-    apt-get install -y kali-linux-headless
-
-RUN \
+    apt-get full-upgrade -y && \
+    apt-get install -y kali-linux-headless man-db && \
+    sudo apt-get update && \
     apt-get clean && \
     apt-get autoremove -y && \
     rm -rf /var/lib/apt/lists/*
