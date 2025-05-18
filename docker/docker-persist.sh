@@ -6,4 +6,4 @@
 
 
 # use privilege to run nmap
-docker run --privileged --rm -it -v sf_vbox:/media/sf_vbox -v $GDRIVE/dev/projects/purple-halo/:/media/local kali-vbox
+docker run --privileged --rm -it -v sf_vbox:/media/sf_vbox -v $GDRIVE/dev/projects/purple-halo/:/med
