@@ -12,7 +12,7 @@ RUN \
     apt-get update && \
     apt-get --fix-broken install && \
     apt-get full-upgrade -y && \
-    apt-get install -y kali-linux-headless man-db && \
+    apt-get install -y kali-linux-headless man-db hashcat-utils && \
     sudo apt-get update && \
     apt-get clean && \
     apt-get autoremove -y && \
