@@ -18,4 +18,5 @@ RUN \
     apt-get autoremove -y && \
     rm -rf /var/lib/apt/lists/*
 
+
 CMD ["/bin/bash"] 
